@@ -1,0 +1,22 @@
+{
+   "name": "sass-project",
+   "description": "Keeping code reusable, scalable, and more...",
+   "author": "benvxavier",
+   "repository": {
+      "type": "git",
+      "url": ""
+   },
+   "scripts": {
+      "watch:sass": "sass --quiet --no-source-map  --watch src/scss/style.scss:src/assets/css/style.css",
+      "watch": "npm-run-all --parallel watch:*",
+      "serve": "browser-sync start --server  'src' --files 'src/**/*.html' 'src/assets/css/style.css' 'src/assets/js/**/*.js'",
+      "start": "npm-run-all --parallel watch serve",
+      "build": "npm-run-all build:*",
+      "deploy": "git subtree push --prefix src  origin gh-pages"
+   },
+   "dependencies": {
+      "npm-run-all": "^4.1.5",
+      "browser-sync": "^2.27.7",
+      "sass": "^1.66.1"
+   }
+}
