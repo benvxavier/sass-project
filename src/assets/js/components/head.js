@@ -14,7 +14,7 @@ class HeadComponent extends HTMLElement {
     <title>${this.dataset.title}</title>
 
     <!-- Favicons -->
-    <link rel="icon" href="${href}favicon.ico">
+    <link rel="icon" href="/favicon.ico">
     <link rel="icon" href="${href}assets/images/icons/favicon.svg">
     <link rel="mask-icon" href="${href}assets/images/icons/mask-icon.svg" color="#000000">
     <link rel="apple-touch-icon" href="${href}assets/images/icons/apple-touch-icon.png">
