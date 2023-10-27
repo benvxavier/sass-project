@@ -13,7 +13,7 @@
   --bg-primary: #cdd4dc;
   --bg-secondary: #fff;
   --bg-tertiary: #f0f3ff;
-  --bg-linear-gradient-01: rgba(0, 0, 0, .9), rgba(0, 0, 0, .8);
+  --hero-bg-linear-gradient: rgba(0, 0, 0, .7), rgba(0, 0, 0, .7);
   --body-bg-overlay: rgba(31, 38, 45, .9);
   --link-01: var(--primary);
   --link-01-hover: var(--primary);
@@ -34103,7 +34103,7 @@
   --bg-primary: #cdd4dc;
   --bg-secondary: #fff;
   --bg-tertiary: #f0f3ff;
-  --bg-linear-gradient-01: rgba(0, 0, 0, .9), rgba(0, 0, 0, .8);
+  --hero-bg-linear-gradient: rgba(0, 0, 0, .7), rgba(0, 0, 0, .7);
   --body-bg-overlay: rgba(31, 38, 45, .9);
   --link-01: var(--primary);
   --link-01-hover: var(--primary);
@@ -45156,7 +45156,7 @@ body custom-footer footer {
 
 .hero {
   position: relative;
-  min-height: clamp(21.875rem, 28.125rem + -8.3333333333vw, 25rem);
+  min-height: clamp(28.125rem, 21.875rem + 8.3333333333vw, 25rem);
   /*&__video {
       position: absolute;
       top: 0;
@@ -45178,10 +45178,10 @@ body custom-footer footer {
 }
 .hero::before {
   content: "";
-  background: -webkit-linear-gradient(to right, var(--bg-linear-gradient-01)), url("../images/hero-bg.png") no-repeat center center;
-  background: -moz-linear-gradient(to right, var(--bg-linear-gradient-01)), url("../images/hero-bg.png") no-repeat center center;
-  background: -o-linear-gradient(to right, var(--bg-linear-gradient-01)), url("../images/hero-bg.png") no-repeat center center;
-  background: linear-gradient(to right, var(--bg-linear-gradient-01)), url("../images/hero-bg.png") no-repeat center center;
+  background: -webkit-linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/hero-bg.png") no-repeat center center;
+  background: -moz-linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/hero-bg.png") no-repeat center center;
+  background: -o-linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/hero-bg.png") no-repeat center center;
+  background: linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/hero-bg.png") no-repeat center center;
   position: absolute;
   top: 0;
   left: 0;

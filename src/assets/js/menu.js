@@ -3,7 +3,7 @@ import { isInPage } from "./utils.js";
 console.log("Executing menu.js");
 
 // Isso garante que este código seja executado após o componente 
-// header ser registrado
+// 'header' ser registrado
 document.addEventListener('headerRegistered', function () {
   let navMenu = document.querySelector('.js-nav-menu'),
     hambMenuIcon = document.querySelector('.js-hamb-menu-icon'),
