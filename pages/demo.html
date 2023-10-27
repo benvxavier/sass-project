@@ -3,11 +3,19 @@
 
 <custom-head data-title="Demo Page" data-href="./../"></custom-head>
 
-<body>
+<body style="visibility: hidden">
+   <custom-header></custom-header>
 
-   <main>
-      <p>Hello, Demo Page!</p>
+   <main class="main full-width">
+      <section class="container-xxl main__container">
+         <section>
+            <p>Hello, Demo Page!</p>
+         </section>
+      </section>
+
    </main>
+
+   <custom-footer></custom-footer>
 
    <script type="module" src="./../assets/js/main.js"></script>
 </body>

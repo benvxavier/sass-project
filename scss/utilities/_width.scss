@@ -1,0 +1,7 @@
+.full-width {
+   // 'width: 100vw;' problematic because of scrollbar 
+   width: auto; // will be set by javascript 
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+}
