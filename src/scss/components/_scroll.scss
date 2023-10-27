@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+.scroll-container {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    //background: lightblue;
+    position: relative;
+    padding: $space-xs;
+
+    // Ocultar barra de rolagem
+
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.scroll-left-btn,
+.scroll-right-btn {
+
+    position: absolute;
+    z-index: 3;
+
+    margin-top: -$space-4xl;
+    
+    @include mq-size-until($phone){
+        display:none;
+    }
+}
+
+.scroll-left-btn{
+    left:-10px;
+}
+.scroll-right-btn {
+    right:-10px;
+}

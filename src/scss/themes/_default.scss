@@ -1,0 +1,39 @@
+@use '../abstracts' as *;
+@use "../vendors/material-design/mixins" as md;
+
+$primary: map-get($primarys, 500);
+$secondary: map-get($neutrals, 500);
+
+:root,
+[data-theme=light] {
+    // Main colors
+
+    --primary: #{$primary};
+    --secondary: #{$secondary};
+
+    --text-primary: #{map-get($neutrals, 700)};
+    --text-primary-inverse: #{map-get($neutrals, 0)};
+    --text-secondary: #{map-get($neutrals, 500)};
+
+    --bg-primary: #{map-get($neutrals, 300)};
+    --bg-secondary: #{map-get($neutrals, 0)};
+    //--bg-tertiary: #{map-get($neutrals, 100)};
+    --bg-tertiary: #{map-get($primarys, 100)};
+
+    // Linear gradients - Overlay
+    --bg-linear-gradient-01: rgba(0, 0, 0, .9), rgba(0, 0, 0, .8);
+    --body-bg-overlay: rgba(31, 38, 45, .9); //#1f262d
+
+    //  Link
+    --link-01: var(--primary);
+    --link-01-hover: var(--primary);
+
+    // Shadows
+    --box-shadow-01: #{md.materialShadow(1, map-get($neutrals, 100))};
+    --box-shadow-02: #{md.materialShadow(2, map-get($neutrals, 100))};
+
+    // Icons
+    --icon-01: #{map-get($neutrals, 700)};
+    --icon-02: #{map-get($neutrals, 500)};
+    --icon-03: #{map-get($neutrals, 0)};
+}
