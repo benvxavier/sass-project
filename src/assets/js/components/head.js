@@ -14,13 +14,13 @@ class HeadComponent extends HTMLElement {
     <title>${this.dataset.title}</title>
 
     <!-- Favicons -->
-    <link rel="icon" href="/assets/images/icons/favicon.svg">
-    <link rel="mask-icon" href="/assets/images/icons/mask-icon.svg" color="#000000">
-    <link rel="apple-touch-icon" href="/assets/images/icons/apple-touch-icon.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="${href}assets/images/icons/favicon.svg">
+    <link rel="mask-icon" href="${href}assets/images/icons/mask-icon.svg" color="#000000">
+    <link rel="apple-touch-icon" href="${href}assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="${href}manifest.json">
 
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="${href}assets/css/style.css">
     `;
   }
 }
