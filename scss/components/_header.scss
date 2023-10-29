@@ -28,19 +28,22 @@
     .nav {
         @include mq-size-until(1200px) {
             &__menu {
-                max-width: 100%;
                 background: var(--bg-secondary);
                 position: absolute;
                 padding: $space-m;
                 right: 0;
                 top: 0;
-                width: 250px;
+                width: 15rem;
+                max-width: 78%;
                 height: 100vh;
                 display: none;
-                border-radius: 0;
 
-                .close-icon {
-                    float: right;
+                .btn.close {
+                    position: absolute;
+                    left: -60px;
+                    background: #fff;
+                    border-radius: 50%;
+                    border: none;
                 }
 
                 &.active {
