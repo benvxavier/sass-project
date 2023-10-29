@@ -10,7 +10,7 @@ console.log("Executing scroll-swipe.js");
 
 // Add buttom shadow to the 'header' when scrolldown
 function headerBottomShadowOnScroll() {
-  const header = document.querySelector("[rel='js-header']");
+  const header = document.querySelector('[data-header]');
 
   if (isInPage(header)) {
     let headerScrollHeight = header.scrollHeight;
@@ -35,8 +35,8 @@ window.addEventListener('DOMContentLoaded', headerBottomShadowOnScroll);
 //
 
 function scrollContainer() {
-  const scrollLeftBtn = document.querySelectorAll("[rel='js-scroll-left-btn']"),
-    scrollRightBtn = document.querySelectorAll("[rel='js-scroll-right-btn']"), scrollContainer = document.querySelectorAll(".scroll-container");
+  const scrollLeftBtn = document.querySelectorAll('[data-scroll-left-btn]'),
+    scrollRightBtn = document.querySelectorAll('[data-scroll-right-btn]'), scrollContainer = document.querySelectorAll('[data-scroll-container]');
 
   if (isInPage(scrollLeftBtn, true) && isInPage(scrollRightBtn, true)
     && isInPage(scrollContainer, true)) {
@@ -191,8 +191,8 @@ detectSwipe();
 
 // SwipeContainer
 function SwipeContainer() {
-  const scrollLeftBtn = document.querySelectorAll("[rel='js-scroll-left-btn']"),
-    swipeContainer = document.querySelectorAll(".scroll-container");
+  const scrollLeftBtn = document.querySelectorAll('[data-scroll-left-btn]'),
+    swipeContainer = document.querySelectorAll('[data-scroll-container]');
 
   if (isInPage(scrollLeftBtn, true) && isInPage(swipeContainer, true)) {
 

@@ -45122,19 +45122,22 @@ body custom-footer footer {
 }
 @media (max-width: 1200px) {
   .header .nav__menu {
-    max-width: 100%;
     background: var(--bg-secondary);
     position: absolute;
     padding: 1rem;
     right: 0;
     top: 0;
-    width: 250px;
+    width: 15rem;
+    max-width: 78%;
     height: 100vh;
     display: none;
-    border-radius: 0;
   }
-  .header .nav__menu .close-icon {
-    float: right;
+  .header .nav__menu .btn.close {
+    position: absolute;
+    left: -60px;
+    background: #fff;
+    border-radius: 50%;
+    border: none;
   }
   .header .nav__menu.active {
     display: block;
