@@ -13,7 +13,7 @@
   --bg-primary: #cdd4dc;
   --bg-secondary: #fff;
   --bg-tertiary: #f0f3ff;
-  --hero-bg-linear-gradient: rgba(0, 0, 0, .7), rgba(0, 0, 0, .7);
+  --hero-bg-linear-gradient: rgba(0, 0, 0, .6), rgba(0, 0, 0, .5);
   --body-bg-overlay: rgba(31, 38, 45, .9);
   --link-01: var(--primary);
   --link-01-hover: var(--primary);
@@ -34103,7 +34103,7 @@
   --bg-primary: #cdd4dc;
   --bg-secondary: #fff;
   --bg-tertiary: #f0f3ff;
-  --hero-bg-linear-gradient: rgba(0, 0, 0, .7), rgba(0, 0, 0, .7);
+  --hero-bg-linear-gradient: rgba(0, 0, 0, .6), rgba(0, 0, 0, .5);
   --body-bg-overlay: rgba(31, 38, 45, .9);
   --link-01: var(--primary);
   --link-01-hover: var(--primary);
@@ -45116,7 +45116,7 @@ body custom-footer footer {
 }
 .header__logo-img {
   width: auto;
-  height: 32px;
+  height: 48px;
 }
 .header__hamb-menu-icon {
   cursor: pointer;
@@ -45182,10 +45182,10 @@ body custom-footer footer {
 }
 .hero::before {
   content: "";
-  background: -webkit-linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/hero-bg.png") no-repeat center center;
-  background: -moz-linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/hero-bg.png") no-repeat center center;
-  background: -o-linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/hero-bg.png") no-repeat center center;
-  background: linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/hero-bg.png") no-repeat center center;
+  background: -webkit-linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/hero-bg-2.jpeg") no-repeat center center;
+  background: -moz-linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/hero-bg-2.jpeg") no-repeat center center;
+  background: -o-linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/hero-bg-2.jpeg") no-repeat center center;
+  background: linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/hero-bg-2.jpeg") no-repeat center center;
   position: absolute;
   top: 0;
   left: 0;
@@ -45204,7 +45204,7 @@ body custom-footer footer {
 
 .card {
   max-width: 100%;
-  width: 16.75rem;
+  width: 15.75rem;
   border: none;
   border-radius: 0;
   box-shadow: var(--box-shadow-01);

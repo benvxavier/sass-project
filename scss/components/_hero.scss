@@ -8,7 +8,7 @@
     &::before {
         content: "";
         @include custom-bg-linear-gradient(to right, var(--hero-bg-linear-gradient),
-            url('../images/hero-bg.png') no-repeat center center);
+            url('../images/hero-bg-2.jpeg') no-repeat center center);
         position: absolute;
         top: 0;
         left: 0;
