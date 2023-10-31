@@ -25,7 +25,7 @@ class HeaderComponent extends HTMLElement {
         <nav class="nav">
           <div class="nav__body-overlay" data-nav-body-overlay></div>
           <div class="nav__menu" data-nav-menu>
-            <button class="btn btn-light btn-lg close" data-close-nav-menu>
+            <button class="btn btn-light btn-lg close" aria-label="close button" data-close-nav-menu>
               <i class="icon icon-01 fa-regular fa-xmark"></i>
             </button>
             <a href="#">Link-01</a>

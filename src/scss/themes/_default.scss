@@ -21,7 +21,7 @@ $secondary: map-get($neutrals, 500);
     --bg-tertiary: #{map-get($primarys, 100)};
 
     // Linear gradients - Overlay
-    --hero-bg-linear-gradient: rgba(0, 0, 0, .7), rgba(0, 0, 0, .7);
+    --hero-bg-linear-gradient: rgba(0, 0, 0, .6), rgba(0, 0, 0, .5);
     --body-bg-overlay: rgba(31, 38, 45, .9); //#1f262d
 
     //  Link
