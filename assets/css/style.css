@@ -44810,7 +44810,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.full-width {
+.u-full-width {
   width: auto;
   position: relative;
   left: 50%;
@@ -45052,6 +45052,7 @@ small:not(:last-child) {
 
 body {
   color: var(--text-primary);
+  overflow-x: hidden;
 }
 
 a {

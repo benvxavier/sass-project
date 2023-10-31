@@ -10,7 +10,7 @@ window.onload = function () {
 function breakoutSetWidth() {
   var body = document.querySelector('body');
   var bodywidth = body.clientWidth;
-  var breakoutElements = document.querySelectorAll('.full-width');
+  var breakoutElements = document.querySelectorAll('.u-full-width');
 
   breakoutElements.forEach(function (element) {
     element.setAttribute('style', 'width:' + bodywidth + 'px; ');

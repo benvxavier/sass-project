@@ -6,10 +6,10 @@
 <body style="visibility: hidden">
    <custom-header data-href="./"></custom-header>
 
-   <main class="main full-width">
+   <main class="main u-full-width">
       <section class="container-xxl main__container">
          <!-- Hero section -->
-         <section class="hero full-width u-flex-center mt-0" rel="js-hero">
+         <section class="hero u-full-width u-flex-center mt-0" rel="js-hero">
             <div class="hero__content">
                <h1 class="display-1">Display Text 1</h1>
                <h1 class="display-2">Display Text 2</h1>
@@ -18,13 +18,41 @@
                </a>
             </div>
          </section>
+
+         <!-- News section -->
+         <section class="news">
+            <h3>News</h3>
+            <div class="u-flex-center position-relative">
+               <!-- Scroll left button -->
+               <button class="btn btn-dark scroll-left-btn" aria-label="scroll left button" data-scroll-left-btn>
+                  <i class="icon fa-solid fa-chevron-left"></i>
+               </button>
+
+               <!-- Scroll container -->
+               <div id="js-scroll-container-1" class="scroll-container d-flex flex-nowrap grid gap-3"
+                  data-scroll-container>
+                  <custom-card data-id="1"></custom-card>
+                  <custom-card data-id="2"></custom-card>
+                  <custom-card data-id="3"></custom-card>
+                  <custom-card data-id="4"></custom-card>
+                  <custom-card data-id="5"></custom-card>
+                  <custom-card data-id="6"></custom-card>
+                  <custom-card data-id="7"></custom-card>
+                  <custom-card data-id="8"></custom-card>
+               </div>
+
+               <!-- Scroll right button -->
+               <button class="btn btn-dark scroll-right-btn" aria-label="scroll right button" data-scroll-right-btn>
+                  <i class="icon fa-solid fa-chevron-right"></i>
+               </button>
+            </div>
+         </section>
       </section>
    </main>
 
    <custom-footer></custom-footer>
 
    <script type="module" src="./assets/js/main.js"></script>
-
 </body>
 
 </html>
