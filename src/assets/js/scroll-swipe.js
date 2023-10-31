@@ -8,7 +8,7 @@ import {
 
 console.log("Executing scroll-swipe.js");
 
-// Add buttom shadow to the 'header' when scrolldown
+// Add buttom shadow to the 'header' when scroll-down
 function headerBottomShadowOnScroll() {
   const header = document.querySelector('[data-header]');
 

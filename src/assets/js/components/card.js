@@ -13,7 +13,7 @@ class CardComponent extends HTMLElement {
   render() {
     this.innerHTML = `
       <div class="card position-relative">
-            <img src="./assets/images/none.jpg" class="card-img-top" alt="...">
+            <img src="./assets/images/card-1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title mb-2">Card title ${this.dataset.id}</h5>
               <p class="card-subtitle small text-muted">${this.dataset.id} de Jun, 2023</p>
