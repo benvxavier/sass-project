@@ -5,6 +5,7 @@ $primary: map-get($primarys, 500);
 $secondary: map-get($neutrals, 500);
 
 :root,
+[data-theme=default],
 [data-theme=light] {
     // Main colors
 
