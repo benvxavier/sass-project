@@ -46136,13 +46136,15 @@ h4 {
   }
 }
 
-h5, .headline {
+h5,
+.headline {
   font-size: 1.125rem;
   font-weight: 500;
   letter-spacing: -0.25px;
 }
 @media (min-width: 901px) {
-  h5, .headline {
+  h5,
+  .headline {
     font-size: 1.125rem;
   }
 }

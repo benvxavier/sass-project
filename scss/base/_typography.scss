@@ -1,8 +1,8 @@
 @use '../abstracts' as *;
 
 body {
-    font-family: $font-family-body ;
-    font-size: 1rem ;
+    font-family: $abs-font-family-body ;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: rgba(0, 0, 0, 0.8);
@@ -12,7 +12,7 @@ body {
 }
 
 code {
-    font-family: $font-family-code;
+    font-family: $abs-font-family-code;
 }
 
 h1,
@@ -20,7 +20,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: $font-family-heading ;
+    font-family: $abs-font-family-heading ;
     line-height: 1.2;
 
     &:not(:last-child) {
@@ -29,10 +29,10 @@ h5 {
 }
 
 h1.display-1 {
-    font-size: typeScale($min-base-font-size, $min-ratio, 7) ;
+    font-size: typeScale($abs-min-base-font-size, $abs-min-ratio, 7);
 
-    @include mq-size-up($tablet-portrait) {
-        font-size: typeScale($max-base-font-size, $max-ratio, 7) ;
+    @include mq-size-up($abs-tablet-portrait) {
+        font-size: typeScale($abs-max-base-font-size, $abs-max-ratio, 7);
     }
 
     font-weight: 300;
@@ -40,10 +40,10 @@ h1.display-1 {
 }
 
 h1.display-2 {
-    font-size: typeScale($min-base-font-size, $min-ratio, 6) ;
+    font-size: typeScale($abs-min-base-font-size, $abs-min-ratio, 6);
 
-    @include mq-size-up($tablet-portrait) {
-        font-size: typeScale($max-base-font-size, $max-ratio, 6) ;
+    @include mq-size-up($abs-tablet-portrait) {
+        font-size: typeScale($abs-max-base-font-size, $abs-max-ratio, 6);
 
     }
 
@@ -52,10 +52,10 @@ h1.display-2 {
 }
 
 h1 {
-    font-size: typeScale($min-base-font-size, $min-ratio, 5) ;
+    font-size: typeScale($abs-min-base-font-size, $abs-min-ratio, 5);
 
-    @include mq-size-up($tablet-portrait) {
-        font-size: typeScale($max-base-font-size, $max-ratio, 5) ;
+    @include mq-size-up($abs-tablet-portrait) {
+        font-size: typeScale($abs-max-base-font-size, $abs-max-ratio, 5);
     }
 
     font-weight: 300;
@@ -63,10 +63,10 @@ h1 {
 }
 
 h2 {
-    font-size: typeScale($min-base-font-size, $min-ratio, 4) ;
+    font-size: typeScale($abs-min-base-font-size, $abs-min-ratio, 4);
 
-    @include mq-size-up($tablet-portrait) {
-        font-size: typeScale($max-base-font-size, $max-ratio, 4) ;
+    @include mq-size-up($abs-tablet-portrait) {
+        font-size: typeScale($abs-max-base-font-size, $abs-max-ratio, 4);
     }
 
     font-weight: 600;
@@ -74,10 +74,10 @@ h2 {
 }
 
 h3 {
-    font-size: typeScale($min-base-font-size, $min-ratio, 3)  ;
+    font-size: typeScale($abs-min-base-font-size, $abs-min-ratio, 3);
 
-    @include mq-size-up($tablet-portrait) {
-        font-size: typeScale($max-base-font-size, $max-ratio, 3) ;
+    @include mq-size-up($abs-tablet-portrait) {
+        font-size: typeScale($abs-max-base-font-size, $abs-max-ratio, 3);
     }
 
     font-weight: 600;
@@ -85,21 +85,22 @@ h3 {
 }
 
 h4 {
-    font-size: typeScale($min-base-font-size, $min-ratio, 2) ;
+    font-size: typeScale($abs-min-base-font-size, $abs-min-ratio, 2);
 
-    @include mq-size-up($tablet-portrait) {
-        font-size: typeScale($max-base-font-size, $max-ratio, 2) ;
+    @include mq-size-up($abs-tablet-portrait) {
+        font-size: typeScale($abs-max-base-font-size, $abs-max-ratio, 2);
     }
 
     font-weight: 600;
     letter-spacing: -0.25px;
 }
 
-h5,.headline {
-    font-size: typeScale($min-base-font-size, $min-ratio, 1) ;
+h5,
+.headline {
+    font-size: typeScale($abs-min-base-font-size, $abs-min-ratio, 1);
 
-    @include mq-size-up($tablet-portrait) {
-        font-size: typeScale($max-base-font-size, $max-ratio, 1) ;
+    @include mq-size-up($abs-tablet-portrait) {
+        font-size: typeScale($abs-max-base-font-size, $abs-max-ratio, 1);
     }
 
     font-weight: 500;
@@ -107,12 +108,12 @@ h5,.headline {
 }
 
 p {
-    font-size: typeScale($min-base-font-size, $min-ratio, 0) ;
-    line-height: $min-line-height;
+    font-size: typeScale($abs-min-base-font-size, $abs-min-ratio, 0);
+    line-height: $abs-min-line-height;
 
-    @include mq-size-up($tablet-portrait) {
-        font-size: typeScale($max-base-font-size, $max-ratio, 0) ;
-        line-height: $max-line-height;
+    @include mq-size-up($abs-tablet-portrait) {
+        font-size: typeScale($abs-max-base-font-size, $abs-max-ratio, 0);
+        line-height: $abs-max-line-height;
     }
 
     &:not(:last-child) {
@@ -122,10 +123,10 @@ p {
 
 .small,
 small {
-    font-size: typeScale($min-base-font-size, $min-ratio, -1) ;
+    font-size: typeScale($abs-min-base-font-size, $abs-min-ratio, -1);
 
-    @include mq-size-up($tablet-portrait) {
-        font-size: typeScale($max-base-font-size, $max-ratio, -1) ;
+    @include mq-size-up($abs-tablet-portrait) {
+        font-size: typeScale($abs-max-base-font-size, $abs-max-ratio, -1);
     }
 
     &:not(:last-child) {
@@ -134,10 +135,10 @@ small {
 }
 
 .xsmall {
-    font-size: typeScale($min-base-font-size, $min-ratio, -2) ;
+    font-size: typeScale($abs-min-base-font-size, $abs-min-ratio, -2);
 
-    @include mq-size-up($tablet-portrait) {
-        font-size: typeScale($max-base-font-size, $max-ratio, -2) ;
+    @include mq-size-up($abs-tablet-portrait) {
+        font-size: typeScale($abs-max-base-font-size, $abs-max-ratio, -2);
     }
 
     &:not(:last-child) {

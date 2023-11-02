@@ -16,23 +16,23 @@ body {
 
         // set 'padding here, to not affect both 'custom-header' and 'header'
         header {
-            padding: $l-space-1;
+            padding: $abs-l-space-1;
         }
     }
 
     .main {
         grid-area: main;
         min-height: 100vh;
-        padding: $l-space-0;
+        padding: $abs-l-space-0;
 
         &__container {
             section {
                 background: var(--bg-secondary);
-                margin: $space-m 0;
-                padding: $space-s;
+                margin: $abs-space-m 0;
+                padding: $abs-space-s;
 
-                @include mq-size-up($tablet-landscape) {
-                    margin: $space-l 0;
+                @include mq-size-up($abs-tablet-landscape) {
+                    margin: $abs-space-l 0;
                 }
             }
         }
@@ -46,7 +46,7 @@ body {
 
         // set 'padding here, to not affect both 'custom-footer' and 'footer'
         footer {
-            padding: $l-space-1;
+            padding: $abs-l-space-1;
         }
     }
 }

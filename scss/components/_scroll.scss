@@ -5,7 +5,7 @@
     -webkit-overflow-scrolling: touch;
     //background: lightblue;
     position: relative;
-    padding: $space-xs;
+    padding: $abs-space-xs;
 
     // Ocultar barra de rolagem
 
@@ -22,9 +22,9 @@
     position: absolute;
     z-index: 3;
 
-    margin-top: -$space-4xl;
+    margin-top: -$abs-space-4xl;
 
-    @include mq-size-until($phone) {
+    @include mq-size-until($abs-phone) {
         display: none;
     }
 }

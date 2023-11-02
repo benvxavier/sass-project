@@ -4,3 +4,5 @@
 // Bootsrap
 @import 'bootstrap/custom'; // required before 'bootsrap' import
 @import 'bootstrap/scss/bootstrap';
+
+//@use e @forward ainda não funcionam no Bootstrap[https://github.com/twbs/bootstrap/issues/30025#issuecomment-574825600]
