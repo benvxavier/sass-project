@@ -1,9 +1,13 @@
 @use '../abstracts' as *;
 @use "../vendors/material-design/mixins" as md;
 
-$primary: map-get($primarys, 500);
-$secondary: map-get($neutrals, 500);
+// scss variables
+$primary: map-get($abs-primary, 500);
+$secondary: map-get($abs-neutrals, 500);
+$text-primary: map-get($abs-neutrals, 700);
+$text-secondary: map-get($abs-neutrals, 500);
 
+// css variables
 :root,
 [data-theme=default],
 [data-theme=light] {
@@ -12,14 +16,14 @@ $secondary: map-get($neutrals, 500);
     --primary: #{$primary};
     --secondary: #{$secondary};
 
-    --text-primary: #{map-get($neutrals, 700)};
-    --text-primary-inverse: #{map-get($neutrals, 0)};
-    --text-secondary: #{map-get($neutrals, 500)};
+    --text-primary: #{map-get($abs-neutrals, 700)};
+    --text-primary-inverse: #{map-get($abs-neutrals, 0)};
+    --text-secondary: #{map-get($abs-neutrals, 500)};
 
-    --bg-primary: #{map-get($neutrals, 300)};
-    --bg-secondary: #{map-get($neutrals, 0)};
-    //--bg-tertiary: #{map-get($neutrals, 100)};
-    --bg-tertiary: #{map-get($primarys, 100)};
+    --bg-primary: #{map-get($abs-neutrals, 300)};
+    --bg-secondary: #{map-get($abs-neutrals, 0)};
+    //--bg-tertiary: #{map-get($abs-neutrals, 100)};
+    --bg-tertiary: #{map-get($abs-primary, 100)};
 
     // Linear gradients - Overlay
     --hero-bg-linear-gradient: rgba(0, 0, 0, .6), rgba(0, 0, 0, .5);
@@ -30,11 +34,11 @@ $secondary: map-get($neutrals, 500);
     --link-01-hover: var(--primary);
 
     // Shadows
-    --box-shadow-01: #{md.materialShadow(1, map-get($neutrals, 100))};
-    --box-shadow-02: #{md.materialShadow(2, map-get($neutrals, 100))};
+    --box-shadow-01: #{md.materialShadow(1, map-get($abs-neutrals, 100))};
+    --box-shadow-02: #{md.materialShadow(2, map-get($abs-neutrals, 100))};
 
     // Icons
-    --icon-01: #{map-get($neutrals, 700)};
-    --icon-02: #{map-get($neutrals, 500)};
-    --icon-03: #{map-get($neutrals, 0)};
+    --icon-01: #{map-get($abs-neutrals, 700)};
+    --icon-02: #{map-get($abs-neutrals, 500)};
+    --icon-03: #{map-get($abs-neutrals, 0)};
 }

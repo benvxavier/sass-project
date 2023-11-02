@@ -3,15 +3,15 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:wght@300,400,500,600,700&display=swap");
 
 
-$font-family-body: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+$abs-font-family-body: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
    "Helvetica Neue", Arial, sans-serif;
-$font-family-code: "Source Code Pro", Monaco, Consolas, "Courier New", monospace !default;
-$font-family-heading: "Poppins", Cambria, Georgia, Arial, serif;
+$abs-font-family-code: "Source Code Pro", Monaco, Consolas, "Courier New", monospace !default;
+$abs-font-family-heading: "Poppins", Cambria, Georgia, Arial, serif;
 
-$min-base-font-size: 16px;
-$min-ratio: 1.125;
-$min-line-height: 1.5;
+$abs-min-base-font-size: 16px;
+$abs-min-ratio: 1.125;
+$abs-min-line-height: 1.5;
 
-$max-base-font-size: 16px;
-$max-ratio: 1.125;
-$max-line-height: 1.5;
+$abs-max-base-font-size: 16px;
+$abs-max-ratio: 1.125;
+$abs-max-line-height: 1.5;

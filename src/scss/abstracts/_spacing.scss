@@ -1,16 +1,16 @@
-@use 'breakpoints' as bp;
-@use 'functions' as f;
+@use 'breakpoints' as *;
+@use 'functions' as *;
 
-$space-4xl: 4rem; //64px;
-$space-3xl: 2.5rem; //48px;
-$space-2xl: 3rem; //40px;
-$space-xl: 2rem; //32px;
-$space-l: 1.5rem; //24px;
-$space-m: 1rem; //16px;
-$space-s: .75rem; //12px;
-$space-xs: .5rem; //8px;
-$space-2xs: .25rem; //4px;
-$space-3xs: .125rem; //2px;
+$abs-space-4xl: 4rem; //64px;
+$abs-space-3xl: 2.5rem; //48px;
+$abs-space-2xl: 3rem; //40px;
+$abs-space-xl: 2rem; //32px;
+$abs-space-l: 1.5rem; //24px;
+$abs-space-m: 1rem; //16px;
+$abs-space-s: .75rem; //12px;
+$abs-space-xs: .5rem; //8px;
+$abs-space-2xs: .25rem; //4px;
+$abs-space-3xs: .125rem; //2px;
 
-$l-space-0: 0px #{f.clamped(bp.$phone, bp.$desktop, 12px, 48px)};
-$l-space-1: 8px #{f.clamped(bp.$phone, bp.$desktop, 12px, 48px)};
+$abs-l-space-0: 0px #{clamped($abs-phone, $abs-desktop, 12px, 48px)};
+$abs-l-space-1: 8px #{clamped($abs-phone, $abs-desktop, 12px, 48px)};

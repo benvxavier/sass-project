@@ -5,7 +5,7 @@
     box-shadow: var(--box-shadow-01);
 
     &__container {
-        @include mq-size-up($tablet-landscape) {
+        @include mq-size-up($abs-tablet-landscape) {
             display: flex;
             justify-content: space-between;
             align-items: center
@@ -30,7 +30,7 @@
             &__menu {
                 background: var(--bg-secondary);
                 position: absolute;
-                padding: $space-m;
+                padding: $abs-space-m;
                 right: 0;
                 top: 0;
                 width: 15rem;

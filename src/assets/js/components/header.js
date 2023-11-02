@@ -28,7 +28,7 @@ class HeaderComponent extends HTMLElement {
             <button class="btn btn-light btn-lg close" aria-label="close button" data-close-nav-menu>
               <i class="icon icon-01 fa-regular fa-xmark"></i>
             </button>
-            <a href="#">Link-01</a>
+            <a href="admin/dashboard.html">Link-01</a>
           </div>
         </nav>
       </section>
