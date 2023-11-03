@@ -1,6 +1,6 @@
 console.log("Executing head.js");
 
-class HeadComponent extends HTMLElement {
+class HeadDataComponent extends HTMLElement {
   connectedCallback() {
     this.render();
   }
@@ -8,7 +8,6 @@ class HeadComponent extends HTMLElement {
   render() {
     var href = this.dataset.href;
     this.innerHTML = `
-    <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${this.dataset.title}</title>
@@ -25,6 +24,6 @@ class HeadComponent extends HTMLElement {
   }
 }
 
-export function registerHeadComponent() {
-  return customElements.define('custom-head', HeadComponent);
+export function registerHeadDataComponent() {
+  return customElements.define('custom-head-data', HeadDataComponent);
 }

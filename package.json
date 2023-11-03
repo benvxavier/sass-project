@@ -9,8 +9,8 @@
    "scripts": {
       "watch:style": "sass --quiet --no-source-map  --watch src/scss/style.scss:src/assets/css/style.css",
       "//": "start: materio boostrap 5 admin template",
-      "watch:core": "sass --quiet --no-source-map  --watch src/scss/vendors/materio/scss/core.scss:src/assets/css/core.css",
-      "watch:theme": "sass --quiet --no-source-map  --watch src/scss/vendors/materio/scss/theme-default.scss:src/assets/css/theme-default.css",
+      "watch:core": "sass --quiet --no-source-map  --watch src/scss/vendors/materio/scss/core.scss:src/assets/vendors/materio/css/core.css",
+      "watch:theme": "sass --quiet --no-source-map  --watch src/scss/vendors/materio/scss/theme-default.scss:src/assets/vendors/materio/css/theme-default.css",
       "//": "end: materio boostrap 5 admin template",
       "watch": "npm-run-all --parallel watch:*",
       "serve": "browser-sync start --server  'src' --files 'src/**/*.html' 'src/assets/css/style.css' 'src/assets/js/**/*.js'",
