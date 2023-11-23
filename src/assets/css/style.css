@@ -46256,7 +46256,7 @@ body custom-footer footer {
 }
 .header__logo-img {
   width: auto;
-  height: 36px;
+  height: 48px;
 }
 .header__hamb-menu-icon {
   cursor: pointer;
@@ -46322,10 +46322,10 @@ body custom-footer footer {
 }
 .hero::before {
   content: "";
-  background: -webkit-linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/hero-bg-2.jpeg") no-repeat center center;
-  background: -moz-linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/hero-bg-2.jpeg") no-repeat center center;
-  background: -o-linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/hero-bg-2.jpeg") no-repeat center center;
-  background: linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/hero-bg-2.jpeg") no-repeat center center;
+  background: -webkit-linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/backgrounds/2.png") no-repeat center center;
+  background: -moz-linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/backgrounds/2.png") no-repeat center center;
+  background: -o-linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/backgrounds/2.png") no-repeat center center;
+  background: linear-gradient(to right, var(--hero-bg-linear-gradient)), url("../images/backgrounds/2.png") no-repeat center center;
   position: absolute;
   top: 0;
   left: 0;
@@ -46336,10 +46336,12 @@ body custom-footer footer {
 .hero__content {
   position: absolute;
   max-width: 42rem;
+  padding: 1rem;
+}
+.hero__content-text {
   -webkit-text-fill-color: #fff;
   filter: contrast(1);
   text-align: center;
-  padding: 1rem;
 }
 
 .card {
@@ -46351,6 +46353,8 @@ body custom-footer footer {
 }
 .card img {
   border-radius: 0;
+  object-fit: cover;
+  height: 9rem;
 }
 .card:hover {
   cursor: pointer;

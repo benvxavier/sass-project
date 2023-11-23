@@ -9,6 +9,10 @@
 // for my default theme
 @use '../../../../themes/default' as theme;
 
+$font-family-sans-serif: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell',
+   'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !default;
+
+
 $headings-color: theme.$text-primary;
 $body-color: theme.$text-primary;
 
