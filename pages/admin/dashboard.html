@@ -7,6 +7,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Admin - Dashboard</title>
 
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&ampdisplay=swap"
+      rel="stylesheet" />
+
    <!-- Favicon -->
    <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
 
@@ -64,7 +70,7 @@
                         </svg>
                      </span>
                   </span>
-                  <span class="app-brand-text demo menu-text fw-semibold ms-2 text-muted">Google</span>
+                  <span class="app-brand-text demo menu-text fw-semibold ms-2 text-muted">MATERIO</span>
                </a>
 
                <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto"
@@ -104,6 +110,64 @@
                   <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)" aria-label="empty link">
                      <i class="mdi mdi-menu mdi-24px"></i>
                   </a>
+               </div>
+
+               <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+
+                  <ul class="navbar-nav flex-row align-items-center ms-auto">
+                     <!-- User -->
+                     <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                        <a class="nav-link dropdown-toggle hide-arrow p-0" href="javascript:void(0);"
+                           data-bs-toggle="dropdown">
+                           <div class="avatar avatar-online">
+                              <img src="../../assets/images/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                           </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end mt-3 py-2">
+                           <li>
+                              <a class="dropdown-item pb-2 mb-1" href="#">
+                                 <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 me-2 pe-1">
+                                       <div class="avatar avatar-online">
+                                          <img src="../../assets/images/avatars/1.png" alt
+                                             class="w-px-40 h-auto rounded-circle" />
+                                       </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                       <h6 class="mb-0">John Doe</h6>
+                                       <small class="text-muted">Admin</small>
+                                    </div>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <div class="dropdown-divider my-1"></div>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                                 <i class="mdi mdi-account-outline me-1 mdi-20px"></i>
+                                 <span class="align-middle">My Profile</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                                 <i class="mdi mdi-cog-outline me-1 mdi-20px"></i>
+                                 <span class="align-middle">Settings</span>
+                              </a>
+                           </li>
+                           <li>
+                              <div class="dropdown-divider my-1"></div>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                 <i class="mdi mdi-power me-1 mdi-20px"></i>
+                                 <span class="align-middle">Log Out</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <!--/ User -->
+                  </ul>
                </div>
             </nav>
             <!--/ Navbar -->

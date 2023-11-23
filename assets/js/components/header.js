@@ -16,7 +16,7 @@ class HeaderComponent extends HTMLElement {
       <section class="container-xxl header__container">
         <div class="u-flex-center justify-content-between">
           <a href="${this.dataset.href}">
-            <img class="header__logo-img" src="${this.dataset.href}/assets/images/logo.svg" alt="logo image">
+            <img class="header__logo-img img-fluid" src="${this.dataset.href}/assets/images/logo.svg" alt="logo image">
           </a>
           <i class="icon icon-01 fa-regular fa-bars fa-lg header__hamb-menu-icon"
           data-icon="hamb-menu-icon"></i>

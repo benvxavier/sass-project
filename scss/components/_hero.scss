@@ -8,7 +8,7 @@
     &::before {
         content: "";
         @include custom-bg-linear-gradient(to right, var(--hero-bg-linear-gradient),
-            url('../images/hero-bg-2.jpeg') no-repeat center center);
+            url('../images/backgrounds/2.png') no-repeat center center);
         position: absolute;
         top: 0;
         left: 0;
@@ -20,11 +20,14 @@
     &__content {
         position: absolute;
         max-width: 42rem;
-        // Resolve o problema de contraste(cor do texto), relatados pela ferramenta WAVE
-        -webkit-text-fill-color: #fff;
-        filter: contrast(1);
-        text-align: center;
         padding: $abs-space-m;
+
+        &-text {
+            // Resolve o problema de contraste(cor do texto), relatados pela ferramenta WAVE
+            -webkit-text-fill-color: #fff;
+            filter: contrast(1);
+            text-align: center;
+        }
     }
 
     // for video with overlay
